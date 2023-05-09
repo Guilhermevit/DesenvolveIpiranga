@@ -1,12 +1,22 @@
 [
   {
-    "id": "00401af0-86b5-442a-86f8-66938ab08d9a",
+    "id": "b9ba091e-0a9b-4571-be82-5a616c2da795",
     "nome": "Guilherme Vt",
     "CPF": "063.726.589-09",
     "attraction": "trocaoleo",
     "type": "aplicativo",
     "abasteceAPP": "sim",
-    "Beneficios": "Desconto-Conveniencia",
+    "Beneficios": "Desconto-Combustivel",
     "Usou": "sim"
+  },
+  {
+    "id": "84c9228b-d264-4a3d-a994-b3f10609430f",
+    "nome": "tesyte",
+    "CPF": "233.365.656-56",
+    "attraction": "funcionamento24hrs",
+    "type": "aplicativo",
+    "abasteceAPP": "sim",
+    "Beneficios": "Desconto-Conveniencia",
+    "Usou": "nao"
   }
 ]

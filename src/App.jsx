@@ -11,7 +11,6 @@ import {
   FormControlLabel,
   RadioGroup,
   Radio,
-  InputAdornment,
   FormLabel,
   Button,
 } from "@material-ui/core";
@@ -66,7 +65,7 @@ function App() {
   const [mensagem, setMensagem] = useState("");
   const [attraction, setAttraction] = useState("");
   const [benefits, setBenefits] = useState("");
-  const [use, setUse] = useState("");
+  const [use, setUse] = useState("sim");
 
   const formatCPF = (cpf) => {
     return cpf
@@ -91,7 +90,7 @@ function App() {
 
   const fetchUserData = async (cpf) => {
     try {
-      const response = await axios.get(`http://localhost:5000/dados/${cpf}`);
+      const response = await axios.get(`http://localhost:8000/dados/${cpf}`);
       const userData = response.data;
 
       if (userData) {
@@ -99,15 +98,15 @@ function App() {
         setAttraction(userData.attraction);
         setValue(userData.type);
         setAbasteceApp(userData.abasteceAPP);
-        setBenefits(userData.benefits);
-        setUse(userData.use);
+        setBenefits(userData.Beneficios);
+        setUse(userData.Usou);
       } else {
         setNome("");
         setAttraction("");
         setValue("");
         setAbasteceApp("sim");
-        setBenefits;
-        setUse;
+        setBenefits("");
+        setUse("");
       }
     } catch (error) {
       console.error("Erro ao buscar usuário:", error);
@@ -120,16 +119,16 @@ function App() {
     setAttraction("");
     setValue("");
     setAbasteceApp("sim");
-    setLitrosAbastecidos(50);
     setBenefits("");
-    setUse;
+    setUse("sim");
   };
 
   const enviarFormulario = () => {
     // Verifica se o campo CPF está vazio
     if (cpf.trim() === "") {
       setMensagem("O campo CPF não pode estar vazio!");
-      return; // Interrompe a execução da função
+      // Interrompe a execução da função
+      return;
     }
 
     const data = {
@@ -144,10 +143,11 @@ function App() {
     };
 
     axios
-      .post("http://localhost:5000/submit", data)
+      .post("http://localhost:8000/submit", data)
       .then((response) => {
         console.log(response.data.message);
         setMensagem("Dados enviados com sucesso!");
+        limparFormulario();
       })
       .catch((error) => {
         console.error("Erro ao enviar os dados: ", error);
