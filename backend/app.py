@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, send_file, abort
+from flask import Flask, request, jsonify, abort
 import json
 from flask_cors import CORS
 
@@ -6,30 +6,50 @@ app = Flask(__name__)
 CORS(app, resources={r'/*': {'origins': '*'}})
 
 
+def read_data():
+    try:
+        with open('data.json', 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
+
+def write_data(data):
+    with open('data.json', 'w') as f:
+        json.dump(data, f)
+
+
+@app.route('/submit', methods=['OPTIONS'])
+def realizar_submit_optionals():
+    response = jsonify({'mensagem': 'ok'})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Methods',
+                         'GET, POST, PUT, DELETE, OPTIONS')
+    response.headers.add('Access-Control-Allow-Headers',
+                         'Content-Type,Authorization')
+    return response
+
+
 @app.route('/submit', methods=['POST'])
 def submit():
     data = request.json
+    if 'CPF' not in data:
+        abort(400, description="CPF is required")
 
-    # Abra o arquivo data.json e leia o conteúdo
-    with open('data.json', 'r') as f:
-        users_data = json.load(f)
+    users_data = read_data()
+# Verifique se o CPF já existe caso exista atualizar
 
-    # Verifique se o CPF já existe
-    cpf_exists = False
     for user in users_data:
         if user['CPF'] == data['CPF']:
-            cpf_exists = True
-            # Atualiza as informações do usuário existente
             user.update(data)
             break
 
-    # Se o CPF não existir, adicione um novo usuário
-    if not cpf_exists:
+# Se o CPF não existir, adicione um novo usuário
+
+    else:
         users_data.append(data)
 
-    # Salve as alterações no arquivo data.json
-    with open('data.json', 'w') as f:
-        json.dump(users_data, f)
+    write_data(users_data)
 
     return jsonify({"message": "Dados salvos com sucesso!"})
 
@@ -38,10 +58,9 @@ def submit():
 
 @app.route('/dados/<cpf>', methods=['GET'])
 def get_user(cpf):
-    with open('data.json', 'r') as f:
-        data = json.load(f)
+    users_data = read_data()
 
-    user = next((item for item in data if item['CPF'] == cpf), None)
+    user = next((item for item in users_data if item['CPF'] == cpf), None)
 
     if user is not None:
         return user

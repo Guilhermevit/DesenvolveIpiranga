@@ -1,38 +1,12 @@
 [
   {
-    "id": "9ee7567e-559f-412a-80e9-cb61e7c44ac8",
-    "nome": "Guilherme Marcos Vit",
+    "id": "00401af0-86b5-442a-86f8-66938ab08d9a",
+    "nome": "Guilherme Vt",
     "CPF": "063.726.589-09",
-    "Nascimento": "10/11/1986",
-    "type": "particular",
-    "abasteceAPP": "nao",
-    "litrosmes": "10"
-  },
-  {
-    "id": "1325ba8d-69c4-45d9-a56d-bfde768ddb3e",
-    "nome": "Tabatha Bensiman Ciampi",
-    "CPF": "333.637.668-82",
-    "Nascimento": "10/06/1984",
-    "type": "particular",
-    "abasteceAPP": "nao",
-    "litrosmes": "120"
-  },
-  {
-    "id": "59c3de3b-68f9-4a78-8b10-fef2428678fa",
-    "nome": "Teste de usuario",
-    "CPF": "230.741.890-21",
-    "Nascimento": "10/11/1986",
-    "type": "particular",
-    "abasteceAPP": "nao",
-    "litrosmes": "125"
-  },
-  {
-    "id": "e22c12ca-4576-419b-b34b-aebaf17eaf5e",
-    "nome": "Teste usu\u00e1rio 3",
-    "CPF": "748.811.848-48",
-    "Nascimento": "01/10/1986",
+    "attraction": "trocaoleo",
     "type": "aplicativo",
     "abasteceAPP": "sim",
-    "litrosmes": "350"
+    "Beneficios": "Desconto-Conveniencia",
+    "Usou": "sim"
   }
 ]
