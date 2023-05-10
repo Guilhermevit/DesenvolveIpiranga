@@ -19,17 +19,6 @@ def write_data(data):
         json.dump(data, f)
 
 
-@app.route('/submit', methods=['OPTIONS'])
-def realizar_submit_optionals():
-    response = jsonify({'mensagem': 'ok'})
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Methods',
-                         'GET, POST, PUT, DELETE, OPTIONS')
-    response.headers.add('Access-Control-Allow-Headers',
-                         'Content-Type,Authorization')
-    return response
-
-
 @app.route('/submit', methods=['POST'])
 def submit():
     data = request.json

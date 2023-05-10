@@ -1,13 +1,13 @@
 [
   {
-    "id": "b9ba091e-0a9b-4571-be82-5a616c2da795",
-    "nome": "Guilherme Vt",
+    "id": "d1b93394-e2f0-4078-8d2a-3824f408f076",
+    "nome": "Guilherme Marcos Vit",
     "CPF": "063.726.589-09",
-    "attraction": "trocaoleo",
-    "type": "aplicativo",
-    "abasteceAPP": "sim",
-    "Beneficios": "Desconto-Combustivel",
-    "Usou": "sim"
+    "attraction": "conveniencias",
+    "type": "particular",
+    "abasteceAPP": "nao",
+    "Beneficios": "CashBack",
+    "Usou": "nao"
   },
   {
     "id": "84c9228b-d264-4a3d-a994-b3f10609430f",

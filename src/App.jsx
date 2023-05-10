@@ -35,6 +35,8 @@ const useStyles = makeStyles((theme) => ({
   },
   radioGroup: {
     paddingTop: theme.spacing(2),
+    paddingLeft: theme.spacing(3),
+    paddingBottom: theme.spacing(1),
   },
 
   formSubmitButton: {
@@ -165,7 +167,7 @@ function App() {
         <Grid item xs={6}>
           <TextField
             fullWidth
-            label="Qual seu CPF?"
+            label="Digite seu CPF:"
             value={cpf}
             onChange={handleCpfChange}
             inputProps={{ maxLength: 14 }}
@@ -175,7 +177,7 @@ function App() {
         <Grid item xs={6}>
           <TextField
             fullWidth
-            label="Qual seu nome?"
+            label="Digite seu nome:"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
           />
@@ -208,7 +210,7 @@ function App() {
             >
               <MenuItem value="particular">Particular</MenuItem>
               <MenuItem value="aplicativo">Aplicativo</MenuItem>
-              <MenuItem value="aplicativo">Empresarial</MenuItem>
+              <MenuItem value="empresarial">Empresarial</MenuItem>
             </Select>
           </FormControl>
         </Grid>
@@ -235,11 +237,11 @@ function App() {
             </Select>
           </FormControl>
         </Grid>
-
+        {/* Pergunta 06 */}
         <Grid item xs={6} style={{ minHeight: "100px" }}>
           <FormControl component="fieldset" className={classes.radioGroup}>
             <FormLabel component="legend">
-              Você usa o App Abastece aí?
+              Você usa o App Abastece aí da Ipiranga?
             </FormLabel>
             <RadioGroup
               row
@@ -252,11 +254,11 @@ function App() {
           </FormControl>
         </Grid>
 
-        {/* Pergunta 06 */}
+        {/* Pergunta 7 */}
         <Grid item xs={6} style={{ minHeight: "100px" }}>
           <FormControl component="fieldset" className={classes.radioGroup}>
             <FormLabel component="legend">
-              Você ja utilizou os postos ipiranga?
+              Você ja utilizou os postos Ipiranga?
             </FormLabel>
             <RadioGroup
               row
