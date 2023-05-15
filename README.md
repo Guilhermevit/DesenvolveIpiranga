@@ -3,7 +3,7 @@ Olá! Este é o repositório do projeto desenvolvido para a Ipiranga. Aqui você
 <br>
 <br>
 Sobre o Projeto 🏁 <br>
-Este projeto tem como objetivo fornecer uma solução inovadora para melhorar a experiência do usuário nos postos de combustível Ipiranga. A ideia central é aplicar questionários aos usuários e coletar informações valiosas, permitindo que a Ipiranga tome decisões estratégicas com base em dados fictica, projeto dsenvolvido afim de completar etapa do programa de inclusão tec da ipiranga.
+Este projeto tem como objetivo fornecer uma solução inovadora para melhorar a experiência do usuário nos postos de combustível. A ideia central é aplicar questionários aos usuários e coletar informações valiosas, permitindo que a que se tome decisões estratégicas com base em dados ficticios, projeto desenvolvido afim de completar etapa do programa de inclusão tec da ipiranga.
 <br>
 <br>
 Principais Funcionalidades 📊 <br>
