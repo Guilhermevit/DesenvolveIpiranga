@@ -32,12 +32,12 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 0,
     textAlign: "center",
     paddingLeft: theme.spacing(2),
-    paddingTop: theme.spacing(2),
+    paddingTop: theme.spacing(2.5),
     paddingBottom: theme.spacing(1),
   },
   input2: {
     paddingRight: 0,
-    paddingTop: theme.spacing(3.5),
+    paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(1),
   },
   radioGroup: {
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 0,
     textAlign: "center",
     paddingLeft: theme.spacing(2),
-    paddingTop: theme.spacing(2),
+    paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(1),
   },
   select2: {
