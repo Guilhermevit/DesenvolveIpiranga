@@ -8,14 +8,14 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 
 def read_data():
     try:
-        with open('data.json', 'r') as f:
+        with open('../backend/DataScience/DataBase.json', 'r') as f:
             return json.load(f)
     except FileNotFoundError:
         return []
 
 
 def write_data(data):
-    with open('data.json', 'w') as f:
+    with open('../backend/DataScience/DataBase.json', 'w') as f:
         json.dump(data, f)
 
 

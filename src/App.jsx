@@ -132,13 +132,6 @@ function App() {
     }
   };
 
-  const handleInputFocus = () => {
-    if (isFirstInput) {
-      setCpf("");
-      setIsFirstInput(false);
-    }
-  };
-
   const fetchUserData = async (cpf) => {
     try {
       const response = await axios.get(`http://localhost:8000/dados/${cpf}`);
@@ -187,7 +180,7 @@ function App() {
 
   const enviarFormulario = () => {
     // Verifica se o campo CPF está vazio
-    if (cpf.trim() === "000.000.000-00") {
+    if (cpf.trim() === "000.000.000-00" || cpf.trim() === "") {
       setMensagem("O campo CPF não pode estar vazio!");
       // Interrompe a execução da função
       return;
@@ -216,6 +209,12 @@ function App() {
       .catch((error) => {
         console.error("Erro ao enviar os dados: ", error);
       });
+  };
+  const handleInputFocus = () => {
+    if (isFirstInput) {
+      setCpf("");
+      setIsFirstInput(false);
+    }
   };
 
   const handleFuelweekFocus = () => {
