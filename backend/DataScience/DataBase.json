@@ -12010,5 +12010,17 @@
     "MelhoriasnoApp": "descontos",
     "Avaliacao": "facil",
     "MotoristadeApp": "nao"
+  },
+  {
+    "id": "07dfcd80-34a6-413d-ada9-fe9e67d11b36",
+    "CPF": "333.637.668-82",
+    "Abastece_week": "1",
+    "Litros_vez": "15",
+    "App_instalados": "01",
+    "escolhaPosto": "localiza\u00e7\u00e3o",
+    "BeneficioPosto": "combustivel",
+    "MelhoriasnoApp": "descontos",
+    "Avaliacao": "facil",
+    "MotoristadeApp": "nao"
   }
 ]
