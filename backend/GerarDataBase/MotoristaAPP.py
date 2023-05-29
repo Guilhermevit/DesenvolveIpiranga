@@ -38,7 +38,7 @@ for i in range(500):
     better = "descontos" if use == "facil" else "facilidade"
     choice = "preço" if better == "descontos" else "qualidade"
     fuelweek = random.randint(
-        5, 7) if choice == "preço" else random.randint(1, 5)
+        4, 8) if choice == "preço" else random.randint(1, 5)
     literstime = random.randint(
         30, 45) if fuelweek >= 5 else random.randint(1, 30)
     data.append({
@@ -47,10 +47,10 @@ for i in range(500):
         'Abastece_week': str(fuelweek),
         'Litros_vez': str(literstime),
         'App_instalados': str(random.randint(0, 4)),
-        'escolhaPosto': choice,
-        'BeneficioPosto': 'cashback',
-        'MelhoriasnoApp': better,
-        'Avaliacao': use,
+        'escolhaPosto': random.choice(["preço", "localização", "qualidade", "descontos"]),
+        'BeneficioPosto': random.choice(["combustivel", "conveniencia", "cashback"]),
+        'MelhoriasnoApp': random.choice(["descontos", "facilidade", "promoções"]),
+        'Avaliacao': random.choice(["facil", "medio", "difícil"]),
         'MotoristadeApp': appdrivre,
     })
 

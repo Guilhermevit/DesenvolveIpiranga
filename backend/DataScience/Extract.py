@@ -12,7 +12,7 @@ df_extracted = df_modified[(df_modified['MotoristadeApp'] == 'Sim') & (
 num_extracted_users = len(df_extracted)
 
 # Imprimir o resultado no console
-print(f"O número de usuários extraídos é: {num_extracted_users}")
+print(f"\nO número de usuários extraídos é: {num_extracted_users}")
 
 # Obter o número total de usuários que responderam "Sim" na coluna "MotoristadeApp"
 num_total_users_sim = len(df_modified[df_modified['MotoristadeApp'] == 'Sim'])
@@ -22,7 +22,7 @@ percentage_extracted_users = (num_extracted_users / num_total_users_sim) * 100
 
 # Imprimir o resultado no console
 print(
-    f"Aproximadamente {percentage_extracted_users:.2f}% dos usuários que responderam 'Sim' foram extraídos.")
+    f"\n{percentage_extracted_users:.2f}% dos usuários que foram extraídos não possuem nenhum aplicativo de desconto.")
 
 
 # Salvar os dados extraídos em um novo arquivo JSON
