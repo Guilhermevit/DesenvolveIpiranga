@@ -1,4 +1,6 @@
-
+<div align="center"> 
+<img  src="https://assets.website-files.com/5ff79f3ebebf6b12f6b7747f/5ffe04fc6284b7e90070d985_logo-gama-academy.png" width="250" />
+</div>
 
 Projeto Ipiranga - 🚀 <br>
 ## Equipe Desenvolve Ipiranga
