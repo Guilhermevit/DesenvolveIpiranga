@@ -47,7 +47,7 @@ cd bank-acc-react
 #### Instalando as Dependências
 
 ```bash
-yarn install
+yarn add
 ```
 
 #### Iniciando a Aplicação
