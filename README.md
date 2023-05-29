@@ -56,7 +56,7 @@ yarn dev
 
 ## Licença
 
-Esse projeto utiliza a <a href="https://cutt.ly/olGu4ds">LICENÇA</a> MIT.
+Esse projeto utiliza a LICENÇA MIT.
 <br>
 Contribuições 🤝 <br>
 Contribuições, problemas e solicitações de recursos são bem-vindos! Fique à vontade para verificar a página de issues ou entrar em contato comigo diretamente. <br>
