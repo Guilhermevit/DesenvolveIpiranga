@@ -1,4 +1,15 @@
-Projeto Ipiranga - Guilherme Vit 🚀 <br>
+
+
+Projeto Ipiranga - 🚀 <br>
+## Equipe Desenvolve Ipiranga
+<a href="https://avatars.githubusercontent.com/u/112904412?v=4" target="_blank"> 
+<img src="https://avatars.githubusercontent.com/u/112904412?v=4" width="90"/>
+<img src="https://avatars.githubusercontent.com/u/86999420?v=4" width="90"/>
+<img src="https://media.licdn.com/dms/image/C4D03AQFJ739rtKOCWQ/profile-displayphoto-shrink_800_800/0/1662686221451?e=1691020800&v=beta&t=YzizsZ0GWnbZuJdHJ6tQxMuiHTcqTxfqdzkaIvtOBks" width="90"/>
+<img src="https://media.licdn.com/dms/image/C4D03AQEZCz5vrLE8cw/profile-displayphoto-shrink_800_800/0/1527824026142?e=1691020800&v=beta&t=Yf0P80MV1MIDYlgGxTPnCyDk1AFMiyYssuwQuXtxQAQ" width="90"/>
+<img src="https://media.licdn.com/dms/image/C4E03AQEzx9x2SyMHWg/profile-displayphoto-shrink_800_800/0/1632236857207?e=1691020800&v=beta&t=HA3TMkAwdckax_JgGRAXc-ujNUEV7uz1P5T5j5mcFlE" width="90"/>
+</a>
+<br>
 Olá! Este é o repositório do projeto desenvolvido para a Ipiranga. Aqui você encontrará informações e documentações relevantes sobre o projeto, bem como o código-fonte e instruções de como utilizá-lo.
 <br>
 <br>
@@ -17,15 +28,35 @@ Front-end: React Vite <br>
 Back-end: Python <br>
 Visualização de dados: Power BI<br> 
 <br> 
-Como Usar 💻<br>
-Clone este repositório em seu computador: <br>
-git clone (https://github.com/Guilhermevit/DesenvolveIpiranga) <br>
-<br>
-Instale as dependências do projeto:<br>
-yarn add <br>
-<br>
-Inicie o servidor back-end e o aplicativo front-end: <br>
-yarn Dev <br>
+## Como Usar
+
+#### Clonando o repositório
+
+```bash
+git clone https://github.com/Guilhermevit/DesenvolveIpiranga
+```
+
+#### Entrando no diretório do projeto
+
+```bash
+cd bank-acc-react
+```
+
+#### Instalando as Dependências
+
+```bash
+yarn install
+```
+
+#### Iniciando a Aplicação
+
+```bash
+yarn dev
+```
+
+## Licença
+
+Esse projeto utiliza a <a href="https://cutt.ly/olGu4ds">LICENÇA</a> MIT.
 <br>
 Contribuições 🤝 <br>
 Contribuições, problemas e solicitações de recursos são bem-vindos! Fique à vontade para verificar a página de issues ou entrar em contato comigo diretamente. <br>
