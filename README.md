@@ -55,6 +55,10 @@ yarn add
 ```bash
 yarn dev
 ```
+### A nossa Apresentação
+
+[![Ícone de vídeo](https://img.icons8.com/ios-filled/90/000000/video.png)](https://drive.google.com/file/d/1bq6yBOuy9iphKq80aFRQGJjvXpEKch75/view?usp=sharing)
+[![Ícone do Power BI](https://img.icons8.com/?size=90&id=qYfwpsRXEcpc&format=png)](https://drive.google.com/file/d/1KB1xHoDGsAlQGwdtVxmE6StnCzOLobbO/view?usp=sharing)
 
 ## Licença
 
